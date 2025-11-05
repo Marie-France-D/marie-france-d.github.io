@@ -1,7 +1,58 @@
+h1 {background-color: blue;}
+h2 {background-color: rgb(60, 60, 60);}
+form {background-color: rgba(60, 60, 60, 40%);}
+table {background: #C06347;}
+dl {background-color: hsl(0, 100%, 50%);}
+
 #heading1{
     color: green;
+    background: aquamarine;
 }
 
 .text-pink{
     color:rgb(255, 0, 230);
 }
+
+
+body{
+    
+
+    font-family: "momo signature","Lucida Handwriting",cursive;
+}
+
+
+/* class Nov. 4 */
+
+h1{
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight:900;
+
+}
+
+:root{
+    --primary-red: rgb(156, 69, 69);
+    --just-red: rgb(156, 69, 69);
+}
+
+a{
+    color: rgb(0, 60, 255);
+    text-decoration: none;
+    background-color: rgba(215, 222, 14,0.5);
+    padding: 20px 10px 20px 10px;
+    margin-left: 50px;
+}
+a:hover{
+    color: rgba(165, 42, 42, 0.922);
+}
+a:visited{
+    color: rgb(110, 16, 187);
+}
+/* This is a comment */
+
+@media (max-width: 576px) {
+ body {
+ background-color: rgb(24, 167, 215);}
+}
+
+
