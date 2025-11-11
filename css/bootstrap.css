@@ -7,3 +7,30 @@
     background-color: red;
     border-color: black;
 }
+
+/* nov 10 */
+
+.div-class-container-fluid{
+      height: 200px;
+      background-color: #fff;
+      padding: 3rem;
+    }
+    .right-section {
+      background-color: #FFD200; /* Yellow */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .right-section img {
+      max-width: 80%;
+      height: auto;
+    }
+    @media (max-width: 80%) {
+      .left-section, .right-section {
+        text-align: center;
+        padding: 2rem;
+      }
+    }
+
+/* nov 10 */
+
