@@ -14,6 +14,14 @@ h1{
   align-items: center; justify-content: center;
 }
 
+.leftbox{
+  align-items: center; justify-content: center;
+}
+
+.rightbox{
+  align-items: center; justify-content: center;
+}
+
 .mypic{
   align-items: center; justify-content: center;
 }
