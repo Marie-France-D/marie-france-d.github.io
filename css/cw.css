@@ -15,8 +15,6 @@ dl {background-color: hsl(0, 100%, 50%);}
 
 
 body{
-    
-
     font-family: "momo signature","Lucida Handwriting",cursive;
 }
 
@@ -27,7 +25,6 @@ h1{
     font-size: 3.8rem;
     font-style: italic;
     font-weight:900;
-
 }
 
 :root{

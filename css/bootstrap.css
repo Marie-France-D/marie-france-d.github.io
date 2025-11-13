@@ -1,0 +1,27 @@
+.HOME{
+  background-color: rgb(0, 191, 255);
+}
+
+h1{
+  font-family: 'Segoe UI', Tahoma, sans-serif; font-size: large;
+}
+
+.Intro-boxes-container{
+  justify-content: center;
+}
+
+.row{
+  align-items: center; justify-content: center;
+}
+
+.mypic{
+  align-items: center; justify-content: center;
+}
+
+.long-column {
+  height: 60vh;
+}
+
+.img{
+  align-self: center;
+}

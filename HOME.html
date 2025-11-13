@@ -14,7 +14,8 @@
 <!-- Add container to page=padding -->
 <div class="container"> <!--add what to make responsive. nest this: <div class="col-lg-4 col-md-5 col-sm-12 border border-3">? -->
 
-<!-- nav bar begins -->
+<!-- Header begins -->
+    <header class="header bar">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
             <a class="navbar-brand" href="#">Marie-France David</a>
@@ -42,36 +43,29 @@
         </div>
     </div>
     </nav>
-<!-- nav bar ends -->
+    </header>
+<!-- Header ends -->
 
-<!-- picture -->
+<!--Intro-boxes home page-->
+<main class="HOME">
+    <h1 class="section-title">Marie-France David</h1>
 
- <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" height="200">
-
-<!-- picture end -->
-
-
-<h1></h1>
-
-
-<!--Attemps at boxes-->
-
-
-<div class="row">
-
-  <div class="col-md-6">
-     <div class="h-50 d-inline-block" style="background-color: aquamarine; height: 600px;">This is the firt element </div>
-    <!-- Your first element here -->
-    <p>This is the first element.</p>
-  </div>
-
-  <div class="col-md-6 d-flex align-items-center justify-content-center h-50" style="background-color: yellow;">This is the second element.</div>
-
+<div class="Intro-boxes-container">
+    <div class="row">
+    <!-- Left column text-->
+            <div class="col-lg-4 col-md-5 col-sm-12 border border-6 long-column" id="left box">
+                This is is where I can write an introduction about myself
+            </div>
+     <!-- Right column picture -->
+            <div class="col-lg-4 col-md-5 col-sm-12 border border-6 long-column" id="right box">
+                <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" height="200" id="mypic">
+            </div>
+    </div>
 </div>
+</main>    
+<!--Intro-boxes home end-->
 
-<!--Attemps at boxes-->
-
-    </div> 
-  </body>
+</div> 
+</body>
 
 </html>
