@@ -11,7 +11,7 @@
 /* nov 10 */
 
 .div-class-container-fluid{
-      height: 200px;
+      height: 400px;
       background-color: #fff;
       padding: 3rem;
     }
@@ -31,6 +31,9 @@
         padding: 2rem;
       }
     }
+    .long-column {
+  height: 60vh;
+}
 
 /* nov 10 */
 

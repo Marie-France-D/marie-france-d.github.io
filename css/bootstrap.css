@@ -1,10 +1,4 @@
-.HOME{
-  background-color: rgb(0, 191, 255);
-}
 
-h1{
-  font-family: 'Segoe UI', Tahoma, sans-serif; font-size: large;
-}
 
 .Intro-boxes-container{
   justify-content: center;
@@ -32,4 +26,132 @@ h1{
 
 .img{
   align-self: center;
+}
+
+h1{
+  font-family: 'Segoe UI', Tahoma, sans-serif; font-size: large;
+}
+
+.body{
+  background-color: bisque;
+  margin-top: 70px;
+  padding: 0;
+}
+
+body{
+  display: block;
+  margin: 8px;
+}
+
+.education {
+  background-color: rgba(177, 111, 31, 0.642);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+section {
+  display: block;
+}
+
+.navbar{
+  background-color: rgba(127, 84, 167, 0.699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+
+header{
+  display: block;
+}
+.section-heading h1{
+  font-size: 2em;
+}
+
+.section-heading h1{
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.section-heading h1:after{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  background-color: blue;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.education-contents{
+  flex-direction: column;
+  align-items: center;
+}
+.education-contents {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-box{
+  max-width: 90%;
+}
+.education-box{
+  background-color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  margin: 15px;
+}
+
+img{
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.education-box h2{
+  font-size: 1.5em;
+}
+.education-box h2{
+  color: black;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h2{
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.education-box h3{
+  font-size: 1.2em;
+  color: black;
+  margin-bottom: 10px;
+}
+
+h3{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.education-box h3:last-child{
+  font-weight: bold;
+  color: brown;
 }
