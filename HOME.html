@@ -10,6 +10,7 @@
   </head>
   
   <body>
+    <section class="home" id="home">
 
 <!-- Add container to page=padding -->
 <div class="container"> <!--add what to make responsive. nest this: <div class="col-lg-4 col-md-5 col-sm-12 border border-3">? -->
@@ -45,26 +46,28 @@
 <!--navbar ends -->
 
 <!--Intro-boxes home page-->
-<main class="HOME">
-    <h1 class="section-title">Marie-France David</h1>
+<body class="page-home">
+     <header class="page-home-heading">
+    <h1>
+      Marie-France David
+    </h1>
+     </header>
 
-<div class="Intro-boxes-container">
-    <div class="row">
+    <section class="page-home-intro-boxes"> <!--Naming convention???-->
+        <div class="row justify-content-center">
     <!-- Left column text-->
-            <div class="col-lg-4 col-md-5 col-sm-12 border border-6 long-column d-flex align-items-center justify-content-center" id="leftbox">
+            <div class="col-lg-4 col-md-5 col-sm-12 border border-5 long-column d-flex align-items-center justify-content-center intro-left"> <!--ça comprend tout seul left and right?-->
                 This is is where I can write an introduction about myself
             </div>
      <!-- Right column picture -->
-            <div class="col-lg-4 col-md-5 col-sm-12 border border-6 long-column d-flex align-items-center justify-content-center" id="rightbox">
-                <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" height="200" id="mypic">
+            <div class="col-lg-4 col-md-5 col-sm-12 border border-5 long-column d-flex align-items-center justify-content-center intro-right">
+            <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" id="intro-img">
             </div>
-    </div>
-</div>
-</main>    
+        </div>
+    </section>
+</body>
 <!--Intro-boxes home end-->
 
-</div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
 </html>
