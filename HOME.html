@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   
-  <body>
-    <section class="home" id="home">
-
-<!-- Add container to page=padding -->
+<body class="home">
 <div class="container"> <!--add what to make responsive. nest this: <div class="col-lg-4 col-md-5 col-sm-12 border border-3">? -->
 
 <!-- navbar begins -->
+<section class="navbar">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
             <a class="navbar-brand" href="#">Marie-France David</a>
@@ -43,28 +41,45 @@
         </div>
     </div>
     </nav>
+</section>
 <!--navbar ends -->
 
-<!--Intro-boxes home page-->
-<body class="page-home">
-     <header class="page-home-heading">
-    <h1>
-      Marie-France David
-    </h1>
+<!--Intro-boxes begin-->
+<section class="page-home">
+<div class="col-lg-4 col-md-5 col-sm-12 border border-3">
+    <header class="page-home-heading">
+        <h1>Marie-France David</h1>
      </header>
 
-    <section class="page-home-intro-boxes"> <!--Naming convention???-->
+<div class="container">
+  <div class="intro-grid">
+    <div class="item1">This is is where I can write an introduction about myself</div>
+    <div class="item2">
+        <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" id="intro-img">
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+<!--Intro-boxes end-->
+
+
+
+<!--
+    <section class="page-home-intro-boxes"> Naming convention???
         <div class="row justify-content-center">
-    <!-- Left column text-->
-            <div class="col-lg-4 col-md-5 col-sm-12 border border-5 long-column d-flex align-items-center justify-content-center intro-left"> <!--ça comprend tout seul left and right?-->
+    Left column text
+            <div class="col-lg-4 col-md-5 col-sm-12 border border-5 long-column d-flex align-items-center justify-content-center intro-left"> ça comprend tout seul left and right?
                 This is is where I can write an introduction about myself
             </div>
-     <!-- Right column picture -->
+      Right column picture
             <div class="col-lg-4 col-md-5 col-sm-12 border border-5 long-column d-flex align-items-center justify-content-center intro-right">
             <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" id="intro-img">
             </div>
         </div>
-    </section>
+    </section> -->
+</div>
 </body>
 <!--Intro-boxes home end-->
 

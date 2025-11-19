@@ -1,3 +1,30 @@
-.grid{
-grid-auto-rows: auto;
+.container {
+  display: block;
+  justify-content: center;
+}
+
+.test-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto; /* 2 equal columns */
+  gap: 0px;                              /* row + column gap */
+  padding: 30px 20px 20px;
+  height: 50vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.item1 {
+  align-content: center;
+  text-align: center;
+  width: 216px;
+  background-color: rgb(155, 127, 182);
+}
+
+.item2 {
+  align-content: center;
+  text-align: center;
+  width: 216px;
+  background-color: aliceblue;
 }
