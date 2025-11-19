@@ -10,7 +10,6 @@
   </head>
   
 <body class="home">
-<div class="container"> <!--add what to make responsive. nest this: <div class="col-lg-4 col-md-5 col-sm-12 border border-3">? -->
 
 <!-- navbar begins -->
 <section class="navbar">
@@ -45,44 +44,30 @@
 <!--navbar ends -->
 
 <!--Intro-boxes begin-->
-<section class="page-home">
-<div class="col-lg-4 col-md-5 col-sm-12 border border-3">
+<section class="page-home"> <!-- ?? Difference when no section defined, but reason?-->
+
+    <div class="container d-flex justify-content-center"> <!-- MF Bootstrap requires flex container to apply center fct-->
     <header class="page-home-heading">
         <h1>Marie-France David</h1>
-     </header>
-
-<div class="container">
-  <div class="intro-grid">
-    <div class="item1">This is is where I can write an introduction about myself</div>
-    <div class="item2">
-        <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" id="intro-img">
+    </header>
     </div>
-  </div>
-</div>
 
-</div>
+    <div class="container d-flex" id="intro-boxes">
+        <div class="row">
+            <div class="col-lg-6 col-md-5 col-sm-12 border border-3" id="box1">
+                This is is where I can write an introduction about myself and introduce the site
+            </div>
+
+            <div class="col-lg-6 col-md-5 col-sm-12 border border-3" id="box2">
+                <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" id="intro-img">
+            </div>
+        </div>
+    </div>
+
 </section>
 <!--Intro-boxes end-->
 
-
-
-<!--
-    <section class="page-home-intro-boxes"> Naming convention???
-        <div class="row justify-content-center">
-    Left column text
-            <div class="col-lg-4 col-md-5 col-sm-12 border border-5 long-column d-flex align-items-center justify-content-center intro-left"> ça comprend tout seul left and right?
-                This is is where I can write an introduction about myself
-            </div>
-      Right column picture
-            <div class="col-lg-4 col-md-5 col-sm-12 border border-5 long-column d-flex align-items-center justify-content-center intro-right">
-            <img src="assets/img/MFD-5-Edit copy.jpg" alt="word sample image" id="intro-img">
-            </div>
-        </div>
-    </section> -->
-</div>
-</body>
-<!--Intro-boxes home end-->
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  
+
+</body>
 </html>

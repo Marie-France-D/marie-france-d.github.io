@@ -30,17 +30,20 @@
   background-color: rgb(131, 131, 188);
 }
 
+/* ?? is page-home required since nothinr to apply to it?
 .page-home{
   margin: 0;
   margin-top: 90px;
-  min-height: 100vh; /* vh??? */
-}
+  min-height: 70vh;
+} */
+
+/* both containers aren't same width, 960px and 908ox, because break. How to resolve? */
 
 .page-home-heading {
-  justify-self: center;
-  width: 912px;
-  background-color: rgba(177, 111, 31, 0.642);
-  padding: 30px 10px 20px 10px;
+  width: 80%;
+  background-color: rgba(112, 121, 165, 0.642);
+  padding-top: 90px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -48,43 +51,38 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2em;
   color: black;
-  margin: 0 0 20px; /* margin? display block? */
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  /* display: block; */
 }
 
-.intro-grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto; /* 2 equal columns */
-  gap: 0px;                              /* row + column gap */
-  padding: 30px 20px 20px;
+#intro-boxes {
+  width: 70%;
   height: 50vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
-  font-weight: bold;
 }
 
-.item1 {
+#box1 {
+  padding: 40px 15px 40px 15px;
+  background-color: rgb(182, 127, 178);
+  justify-content: center;
   align-content: center;
-  text-align: center;
-  padding: 20px 10px 20px 10px;
-  width: 456.75px;
-  background-color: rgb(155, 127, 182);
 }
 
-.item2 {
+#box2 {
+  justify-content: center;
   align-content: center;
-  text-align: center;
-  width: 456.75px;
 }
 
 #intro-img {
-  height: 304.5px;
-  width: 456.75px;
+  height: 100%;
+  width: 100%;
 }
+/* ?? How do you adjust the image?*/
+/* home end */
+
+
+
+/* education */
 
 .education {
   background-color: blueviolet;
@@ -105,7 +103,7 @@
   text-align: center;
 }
 
-
+/* education end */
 
 
 /* display: grid; ///or flex? 
