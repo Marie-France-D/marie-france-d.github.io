@@ -25,7 +25,59 @@
   line-height: 7dvh;
 }
 
-/* home */
+/* font defintion h1 to small */
+h1 {
+  font-family: 'Noto Sans', 'Segoe UI', sans-serif;
+  font-size: 2.986rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Noto Sans', 'Segoe UI', sans-serif;
+  font-size: 2.488rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Lato', 'Calibri',sans-serif;
+  font-size: 2.074rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Lato', 'Calibri',sans-serif;
+  font-size: 1.728rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: 'Lato', 'Calibri',sans-serif;
+  font-size: 1.44rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: 'Lato', 'Calibri',sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Lato', 'Calibri',sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+small {
+  font-family: 'Lato', 'Calibri',sans-serif;
+  font-size: 0.833rem;
+  font-weight: 400;
+}
+
+/* font defintion h1 to small: end */
+
+
+/* home beginning */
 .home {
   background-color: rgb(204, 181, 227);
 }
@@ -48,8 +100,6 @@
 }
 
 .home-header h1{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -176,7 +226,9 @@ background-color: rgb(140, 175, 215);
 /*projects end*/
 
 /* contact begins */
-
+.contact-list {
+  margin-top: 8dvh;
+}
 
 /* contatc ends */
 
