@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 7vh;
   height: 7dvh;
   padding: 0px 20px;
   position: fixed;
@@ -30,48 +31,56 @@ h1 {
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 2.986rem;
   font-weight: 400;
+  color: black;
 }
 
 h2 {
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 2.488rem;
   font-weight: 400;
+  color: black;
 }
 
 h3 {
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 2.074rem;
   font-weight: 400;
+  color: black;
 }
 
 h4 {
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 1.728rem;
   font-weight: 400;
+  color: black;
 }
 
 h5 {
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 1.44rem;
   font-weight: 400;
+  color: black;
 }
 
 h6 {
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
+  color: black;
 }
 
 p {
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  color: black;
 }
 
 small {
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 0.833rem;
   font-weight: 400;
+  color: black;
 }
 
 /* font defintion h1 to small: end */
@@ -96,6 +105,8 @@ small {
   margin-top: 8dvh;
   padding-top: 3dvh;
   padding-bottom: 3dvh;
+  height: 12vh;
+  height: 12dvh;
   text-align: center;
 }
 
@@ -107,7 +118,8 @@ small {
 }
 
 #intro-boxes {
-  height: 50dvh;
+  height: 71vh;
+  height: 71dvh;
 }
 
 #box1 {
@@ -134,7 +146,8 @@ small {
 
 .home-footer {
   background-color: rgb(67, 125, 125);
-  height: 15dvh;
+  height: 10vh;
+  height: 10dvh;
 }
 /* home end */
 
@@ -146,7 +159,9 @@ small {
   background-color: blueviolet;
   display: block;
   padding: 0;
+  margin: 1vh;
   margin: 1dvh;
+  min-height: 100vh;
   min-height: 100dvh;
 }
 
@@ -187,14 +202,61 @@ img {
 
 /* experience */
 
-.experience-section h2 {
-  padding-top: 10dvh;
+body {
+  margin: 0;
 }
+
+main.experience-main {
+  position: relative;
+  padding-top: 35vh;
+  color: #000;
+  overflow: hidden;
+}
+
+main.experience-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;             
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),  /* overlay: adjust alpha */
+    url("../assets/img/PicDP.jpg");                         /* your image path */
+  background-size: cover;         /* crop as needed to fill the banner */
+  background-position: top center;/* pick which part of the image shows */
+  background-repeat: no-repeat;
+  pointer-events: none;           /* the banner won’t block interactions */
+  z-index: 0;
+}
+
+/* Make sure the content sits above the banner layer */
+main.experience-main > * {
+  position: relative;
+  z-index: 1;
+}
+
+.experience-section {
+  margin-top: 8dvh;
+  padding-top: 10dvh;
+  position: relative;
+  z-index: 1; /* what is z-index? */
+}
+
 
 #experience-table {
   padding-top: 10dvh;
   width: 100%;
-  border: 2px solid black; /*appropriate ti use px measure here, yes?*/
+  border-collapse: collapse;
+  background: transparent;
+}
+
+#experience-table th, #experience-table td {
+  border: 2px solid #000;
+  padding: 0.75rem 1rem;
+  color: black;
+}
+
+#experience-table thead th {
+  background: #111;
+  color: #fff;
 }
 
 /* experience end */
