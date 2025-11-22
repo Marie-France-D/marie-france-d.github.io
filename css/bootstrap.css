@@ -1,11 +1,10 @@
-.navbar{
-  background-color: rgba(127, 84, 167, 0.699);
+.nav-container{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 7vh;
   height: 7dvh;
-  padding: 0px 20px;
+  padding: 5vh 3vh;
   position: fixed;
   left: 0;
   right: 0;
@@ -13,19 +12,33 @@
   z-index: 99;
   font-family: 'Segoe UI', Verdana, sans-serif;
   font-size: large; 
-  color: rgb(40, 64, 198);
+  background-color: #025559;
 }
 
 .navbar-brand{
+  font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 1.5em;
+  color: white;
   line-height: 7dvh;
 }
 
 .nav-link{
+  font-family: 'Noto Sans', 'Segoe UI', sans-serif;
+  font-size: 1.1em;
+  color: white;
   padding: 0 15px;
   line-height: 7dvh;
 }
 
+/* Optional: hover/active states */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffd1ef; } /* a lighter white/teal tint */
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand.active {
+  color: #ffd1ef;
+}
 /* font defintion h1 to small */
 h1 {
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
@@ -87,8 +100,8 @@ small {
 
 
 /* home beginning */
-.home {
-  background-color: rgb(204, 181, 227);
+.home-section {
+  background-color: #bf5098;
 }
 
 /* ?? is page-home required since nothing to apply to it?
@@ -101,7 +114,7 @@ small {
 /* both containers aren't same width, 960px and 908ox, because break. How to resolve? */
 
 .home-header {
-  background-color: rgba(112, 121, 165, 0.642);
+  background-color: #8c1f66;
   margin-top: 8dvh;
   padding-top: 3dvh;
   padding-bottom: 3dvh;
@@ -111,7 +124,6 @@ small {
 }
 
 .home-header h1{
-  color: black;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -125,9 +137,13 @@ small {
 #box1 {
   width: 65dvh;
   padding: 4dvh 2dvh 4dvh 2dvh;
-  background-color: rgb(182, 127, 178);
   justify-content: center;
   align-content: center;
+/* base neutral backdrop */
+  background:
+    linear-gradient(rgba(191, 80, 152, 0.25), rgba(191, 80, 152, 0.25)),
+    #ffffff; /* white base stops blending with parent color */
+
 }
 
 #box2 #intro-img {
@@ -145,7 +161,7 @@ small {
 }  */
 
 .home-footer {
-  background-color: rgb(67, 125, 125);
+  background-color: #025559;
   height: 10vh;
   height: 10dvh;
 }
