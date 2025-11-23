@@ -1,3 +1,4 @@
+/* navbar */
 .nav-container{
   display: flex;
   justify-content: center;
@@ -10,7 +11,7 @@
   right: 0;
   top: 0;
   z-index: 99;
-  font-family: 'Segoe UI', Verdana, sans-serif;
+  font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: large; 
   background-color: #025559;
 }
@@ -29,7 +30,6 @@
   padding: 0 15px;
   line-height: 7dvh;
 }
-
 /* Optional: hover/active states */
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
@@ -39,12 +39,67 @@
 .navbar .navbar-brand.active {
   color: #ffd1ef;
 }
+
+/* navbar */
+
+
+/* Clean up defaults so spacing is consistent */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* no scrolling */
+}
+
+
+/* footer */
+.footer {
+  margin-top: auto;         /* key line: pushes footer to bottom */
+  display: flex;            /* so alignment works */
+  align-content: center;
+  justify-content: flex-end; /* aligns footer content to the right */
+  background-color: #025559;
+  color: white; /* Pick one sizing approach: height OR padding */
+  height: 9vh;
+  height: 9dvh;             /* fixed footer height */  
+  padding: 0 3vh;  /* horizontal padding only if height is fixed */
+  background-color: #025559;
+  border-top: 1px solid rgba(255,255,255,0.2)
+}
+
+.footer h4 {
+  color: white;
+}
+
+#footer-contact {
+    color: white;
+    text-decoration: solid;
+    background-color: limegreen;
+    padding: 1vh 1vh;
+    margin-top: auto;
+    display: flex;
+    margin-left: 4vh;
+    align-content: center;
+    justify-content: center;
+}
+
+#footer-contact {
+    color: #ffd1ef;
+}
+
+#footer-contact {
+    color: rgb(110, 16, 187);
+}
+
+/* footer */
+
+
 /* font defintion h1 to small */
 h1 {
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 2.986rem;
   font-weight: 400;
   color: black;
+  margin: 0.4em 0; /* small, consistent margins */
 }
 
 h2 {
@@ -52,6 +107,7 @@ h2 {
   font-size: 2.488rem;
   font-weight: 400;
   color: black;
+  margin: 0.4em 0; /* small, consistent margins */
 }
 
 h3 {
@@ -59,6 +115,7 @@ h3 {
   font-size: 2.074rem;
   font-weight: 400;
   color: black;
+  margin: 0.4em 0; /* small, consistent margins */
 }
 
 h4 {
@@ -66,6 +123,7 @@ h4 {
   font-size: 1.728rem;
   font-weight: 400;
   color: black;
+  margin: 0.4em 0; /* small, consistent margins */
 }
 
 h5 {
@@ -73,6 +131,7 @@ h5 {
   font-size: 1.44rem;
   font-weight: 400;
   color: black;
+  margin: 0.4em 0; /* small, consistent margins */
 }
 
 h6 {
@@ -80,6 +139,7 @@ h6 {
   font-size: 1.2rem;
   font-weight: 400;
   color: black;
+  margin: 0.4em 0; /* small, consistent margins */
 }
 
 p {
@@ -87,6 +147,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
   color: black;
+  margin: 0.4em 0; /* small, consistent margins */
 }
 
 small {
@@ -94,12 +155,14 @@ small {
   font-size: 0.833rem;
   font-weight: 400;
   color: black;
+  margin: 0.4em 0; /* small, consistent margins */
 }
 
 /* font defintion h1 to small: end */
 
 
 /* home beginning */
+
 .home-section {
   background-color: #bf5098;
 }
@@ -129,6 +192,13 @@ small {
   position: relative;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Let main content take up available space */
+  padding: 2vh 3vh; 
+}
+
 #intro-boxes {
   height: 71vh;
   height: 71dvh;
@@ -152,31 +222,16 @@ small {
   align-content: center;
 }
 
+/* ?? How do you adjust the image? */
 
-/*
-#intro-img { /* ?? How do you adjust the image?
-  height: 50dvh;
-  width: 65dvh;
-  justify-self: left;
-}  */
-
-.home-footer {
-  background-color: #025559;
-  height: 10vh;
-  height: 10dvh;
-}
 /* home end */
-
-
 
 /* education */
 
-.education {
+.education-section {
   background-color: blueviolet;
   display: block;
   padding: 0;
-  margin: 1vh;
-  margin: 1dvh;
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -222,9 +277,15 @@ body {
   margin: 0;
 }
 
+.experience-section {
+  padding-top: 0dvh;
+  position: relative;
+  z-index: 1; /* what is z-index? */
+}
+
 main.experience-main {
   position: relative;
-  padding-top: 35vh;
+  padding-top: 25vh;
   color: #000;
   overflow: hidden;
 }
@@ -235,7 +296,7 @@ main.experience-main::before {
   inset: 0;             
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),  /* overlay: adjust alpha */
-    url("../assets/img/PicDP.jpg");                         /* your image path */
+    url("../assets/img/stairs.jpeg");                         /* your image path */
   background-size: cover;         /* crop as needed to fill the banner */
   background-position: top center;/* pick which part of the image shows */
   background-repeat: no-repeat;
@@ -247,13 +308,6 @@ main.experience-main::before {
 main.experience-main > * {
   position: relative;
   z-index: 1;
-}
-
-.experience-section {
-  margin-top: 8dvh;
-  padding-top: 10dvh;
-  position: relative;
-  z-index: 1; /* what is z-index? */
 }
 
 
@@ -280,26 +334,30 @@ main.experience-main > * {
 
 /* projects*/
 
-.projects {
-background-color: rgb(140, 175, 215);
+/* Make the section fill the viewport and stack children vertically */
+.projects-section {
+  min-height: 100dvh;       /* dvh handles mobile browser chrome correctly */
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
 }
 
 .projects-header {
   margin-top: 8dvh;
-  padding-top: 3dvh;
+  padding: 2vh 3vh; /* Optional: control spacing inside header/main for a clean look */
   background-color: rgb(46, 49, 205);
   height: 18dvh;
 }
 
 .projects-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Let main content take up available space */
+  padding: 2vh 3vh; /* Optional: control spacing inside header/main for a clean look */
   background-color: rgb(44, 101, 165);
-  height: 55dvh;
+  /* height: 46dvh; */
 }
 
-.projects-footer {
-  background-color: rgb(205, 238, 255);
-  height: 13dvh;
-}
 
 /*projects end*/
 
@@ -309,6 +367,9 @@ background-color: rgb(140, 175, 215);
 }
 
 /* contatc ends */
+
+
+
 
 
 /* display: grid; ///or flex? 
