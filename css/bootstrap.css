@@ -21,7 +21,7 @@ html, body {
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: large; 
   background-color: #025559;
-  border-bottom: 2px solid rgba(73,174,62,0.6)
+  border-bottom: 0.5vh solid rgba(73,174,62,0.6)
 }
 
 .navbar-brand{
@@ -62,7 +62,7 @@ html, body {
   height: 9vh; /* MF- fixed footer height */  
   height: 9dvh;
   padding: 0 3vh;  /* MF- horizontal padding only if height is fixed */
-  border-top: 2px solid rgba(73,174,62,0.6) /* KC: is 2px included in footer height 9dvh? */
+  border-top: 0.5vh solid rgba(73,174,62,0.6) /* KC: is 2px included in footer height 9dvh? */
 }
 
 .footer h4 {
@@ -200,7 +200,7 @@ small {
 
 }
 
-#box2 #intro-img {
+/* #box2 #intro-img {
   width: 65dvh;
   justify-content: center;
   align-content: center;
