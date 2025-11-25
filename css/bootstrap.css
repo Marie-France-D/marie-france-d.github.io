@@ -162,9 +162,9 @@ small {
 
 .home-header {
   background-color: rgba(140, 31, 102, 0.9);
-  margin-top: 7dvh; /* KC_ I figured that 7vh would be a margin below the navbar, but this isn't so. How can struture properly */
+  margin-top: 6dvh; /* KC_ I figured that 7vh would be a margin below the navbar, but this isn't so. How can struture properly */
   padding-top: 3dvh;
-  padding-bottom: 15dvh;
+  padding-bottom: 11dvh;
   height: 12vh;
   height: 12dvh;
   text-align: center; /* MF_ how to align text vertically */
@@ -176,11 +176,10 @@ small {
 }
 
 .home {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   flex: 1; /* MF_ Let main content take up available space */
   padding: 8vh 3vh;
-  align-items: center; 
 }
 
 #intro-boxes {
