@@ -48,6 +48,10 @@ html, body {
 .navbar .navbar-brand.active {
   color: #ffd1ef;
 }
+/*
+.navbar-toggler .navbar-toggler-icon {
+        image-rendering: url("../assets/img/MFD-5-Edit\ copy.jpg"); /* Replace with your image path */
+        /* background-size: 100% 100%; */
 /* navbar ends */
 
 
@@ -173,6 +177,7 @@ small {
 .home-header h1{
   font-weight: bold;
   text-transform: uppercase;
+  color: white;
 }
 
 .home {
@@ -337,7 +342,7 @@ main.experience-main > * {
 
 /* MF_Make the section fill the viewport and stack children vertically */
 .projects-section {
-  min-height: 100dvh;       /* MF_ dvh handles mobile browser chrome correctly */
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   background-color: rgba(113,212,217, 0.5);
