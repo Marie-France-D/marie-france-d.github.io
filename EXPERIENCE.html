@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   
-  <body>
+  <body class="d-flex flex-column min-vh-100">
 <!--navbar begins-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="nav-container">
@@ -40,47 +40,45 @@
     </nav>
 <!--navbar ends-->
 
+    <main class="experience-main flex-fill">
+      <div class="container">
 
-<section class="experience-section">
-<!-- <div class="container d-flex"> ?? when this is ongoing, the items below are listed in row rather than vertically-->
+        <h1>Information Science Experience</h1>
+        <p>Intro text goes here.</p>
 
-<main class="experience-main">
-  <div class="container">
+        <table id="experience-table">
+          <thead>
+            <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th></tr>
+          </thead>
 
-    <h1>Information Science Experience</h1>
-    <p>Intro text goes here.</p>
+          <tbody>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
 
-  <table id="experience-table">
-    <thead>
-      <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th></tr>
-    </thead>
-    <tbody>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-    </tbody>
-  </table>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
 
-</div>
-</main>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+          </tbody>
+        </table>
 
-  <footer class="footer">
+      </div>
+    </main>
+
+    <footer class="footer d-flex align-items-center justify-content-end py-2">
         <h4>Click here</h4>
         <p><a href="CONTACT.html" target="_self" id="footer-contact">link to Contact</a></p>
-  </footer>
-</section>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

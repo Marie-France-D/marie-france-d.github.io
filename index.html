@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <!-- navbar begins -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -44,18 +44,14 @@
 <!--navbar ends -->
 
 <!--Intro-boxes begin-->
-<section class="home-section"> <!-- ?? why can't I apply container d-flex justify-content-center once at this level? If I do, all is disturbed-->
-
-    <!-- <div class="container d-flex justify-content-center"> MF Bootstrap requires flex container to apply center fct-->
-    <header class="home-header">
+    <header class="home-header d-flex justify-content-center">
         <h1>Marie-France David</h1>
     </header>
-    <!-- </div> -->
 
-    <main class="home">
+    <main class="home flex-fill">
         <div class="container row d-flex" style="justify-content: center;">
             <div class="col-lg-6 col-md-5 col-sm-12 border border-3 p-0 d-flex justify-content-center align-items-center text-left" id="box1">
-                <h4>Hi, I'm Marie-France <br>
+                <h4>Hello, I'm Marie-France <br>
                 This is is where I can write an introduction about myself <br>
                 introduce the site as well <br></h4>
             </div>
@@ -66,11 +62,10 @@
         </div>
     </main>
 
-    <footer class="footer fixed-bottom">
+    <footer class="footer d-flex align-items-center justify-content-end py-2">
         <h4>Click here</h4>
         <p><a href="CONTACT.html" target="_self" id="footer-contact">link to Contact</a></p>
     </footer>
-</section>
 
 <!-- 
 <body class="d-flex flex-column min-vh-100">

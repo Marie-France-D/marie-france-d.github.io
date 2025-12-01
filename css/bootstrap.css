@@ -1,4 +1,3 @@
-/* MF - Clean up defaults so spacing is consistent */
 html, body {
   height: 100%;
   margin: 0;
@@ -48,25 +47,18 @@ html, body {
 .navbar .navbar-brand.active {
   color: #ffd1ef;
 }
-/*
-.navbar-toggler .navbar-toggler-icon {
-        image-rendering: url("../assets/img/MFD-5-Edit\ copy.jpg"); /* Replace with your image path */
-        /* background-size: 100% 100%; */
+
 /* navbar ends */
 
 
 /* footer begins*/
 .footer {
-  margin-top: auto;         /* MF- key line: pushes footer to bottom */
-  display: flex;            /* MF- so alignment works */
-  align-content: center;
-  justify-content: flex-end; /* MF- aligns footer content to the right */
   background-color: #025559;
   color: white;
   height: 9vh; /* MF- fixed footer height */  
   height: 9dvh;
   padding: 0 2vw;  /* MF- horizontal padding only if height is fixed */
-  border-top: 0.5vh solid rgba(73,174,62,0.6) /* KC: is 2px included in footer height 9dvh? no */
+  border-top: 0.5vh solid rgba(73,174,62,0.6)
 }
 
 .footer h4 {
@@ -90,14 +82,13 @@ html, body {
   color: #ffd1ef; }
 /* footer ends*/
 
-
 /* font defintion h1 to small */
 h1 {
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 2.986rem;
   font-weight: 400;
   color: black;
-  margin: 0.4em 0; /* MF- small, consistent margins */
+  margin: 0.4em 0;
 }
 
 h2 {
@@ -159,19 +150,13 @@ small {
 
 
 /* home begins */
-
-.home-section {
-  background-color: rgba(140, 31, 102, 0.3);
-}
-
 .home-header {
   background-color: rgba(140, 31, 102, 0.9);
-  margin-top: 7dvh; /* KC_ I figured that 7vh would be a margin below the navbar, but this isn't so. How can struture properly */
+  margin-top: 7dvh;
   padding-top: 3dvh;
   padding-bottom: 11dvh;
   height: 12vh;
   height: 12dvh;
-  text-align: center; /* MF_ how to align text vertically */
 }
 
 .home-header h1{
@@ -181,9 +166,7 @@ small {
 }
 
 .home {
-  /* display: flex;
-  flex-direction: column;
-  flex: 1; /* MF_ Let main content take up available space */
+  background-color: rgb(122, 197, 203);
   padding: 8vh 2vw;
 }
 
@@ -203,12 +186,10 @@ small {
 
 #box2 {
   width: 37vw;
-} /* KC_ ?? How do you adjust the image to fit in the box? */
-
+}
 /* home ends */
 
 /* education begins */
-
 .education-section {
   background-color: rgba(255,209,239, 0.4);
   display: block;
@@ -283,12 +264,6 @@ img {
 
 /* experience begins */
 
-.experience-section {
-  padding-top: 0dvh;
-  position: relative;
-  z-index: 1; /* KC_  what is z-index? */
-}
-
 main.experience-main {
   position: relative;
   padding-top: 25vh;
@@ -302,7 +277,7 @@ main.experience-main::before {
   inset: 0;             
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),  /* overlay: adjust alpha */
-    url("../assets/img/Archs.jpeg");
+    url("../assets/img/Cherryblossom.JPG");
   background-size: cover;         /* crop as needed to fill the banner */
   background-position: top;/* pick which part of the image shows */
   background-repeat: no-repeat;
@@ -340,14 +315,6 @@ main.experience-main > * {
 
 /* projects begins */
 
-/* MF_Make the section fill the viewport and stack children vertically */
-.projects-section {
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(113,212,217, 0.5);
-}
-
 .projects-header {
   margin-top: 7dvh;
   padding: 2vh 2vw; /* MF_ Optional: control spacing inside header/main for a clean look */
@@ -360,9 +327,6 @@ main.experience-main > * {
 }
 
 .projects-main {
-  display: flex;
-  flex-direction: column;
-  flex: 1; /* MF_ Let main content take up available space */
   padding: 2vh 2vw; /* MF_ Optional: control spacing inside header/main for a clean look */
   background:
     linear-gradient(rgba(113, 212,217, 0.3), rgba(113, 212,217, 0.3)),
@@ -377,198 +341,6 @@ main.experience-main > * {
 }
 
 /* contatc ends */
-
-
-
-/* MF_ saving the following notes for myself */
-
-/* display: grid; ///or flex? 
-  grid-template-columns: repeat(auto-fit, (minmax 220px, 1fr));
-.page-home-intro-boxes{
-  gap: 16px;
-  padding: 16px 20px 40px; on justifie les côtées dans quel ordre?
-  justify-content: center; /ou justify-content: center/
-}
-
-.intro-box{
-  background: #f7f7fb;
-  border: 1px solid #e6e6f0;
-  padding: 16px;
-  min-height: 100px;
-  width: 100%;
-  max-width: 320px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
-}
-
-/ quand j'utilise ID dans HTML, il faut que je fasse #, et les autres symboles de repérage?/
-#intro-img{
-  max-height: 200px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.row{
-  align-items: center; justify-content: center;
-}
-
-.leftbox{
-  align-items: center; justify-content: center;
-}
-
-.rightbox{
-  align-items: center; justify-content: center;
-}
-
-.mypic{
-  align-items: center; justify-content: center;
-}
-
-.long-column {
-  height: 50vh;
-}
-
-
-/* exercise with example */
-
-
-/*
-.education {
-  background-color: blueviolet;
-  margin-top: 90px;
-  padding: 0;
-}
-
-.education {
-  display: block;
-  margin: 8px;
-}
-
-.section-heading-education {
-  background-color: rgba(177, 111, 31, 0.642);
-  padding: 30px 20px;
-  text-align: center;
-}
-
-/* à quoi sert ces deux display block? logique de la structure? les enlever change l'aspect
-
-section {
-  display: block;
-}
-
-header{
-  display: block;
-} */
-
-/* @media (max-width: 768px) ???/
-.section-heading-education h1 {
-  font-size: 2em;
-}
-
-.section-heading-education h1{
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: relative;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  padding-top: 20px;
-  display: block;
-}
-
-/ @media (max-width: 768px) ???/
-.education{
-  background-color: rgb(237, 193, 59);
-  margin-top: 70px;
-  padding: 0;
-}
-
-.education-contents{
-  flex-direction: column;
-  align-items: center;
-}
-.education-contents {
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/ @media (max-width: 768px) ???/
-.education-box{
-  max-width: 90%;
-}
-.education-box{
-  background-color: aliceblue;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 1 1 300px;
-  margin: 15px;
-}
-
-img{
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-
-.education-box h2{
-  font-size: 1.5em;
-}
-.education-box h2{
-  color: black;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-h2{
-  display: block;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-.education-box h3{
-  font-size: 1.2em;
-  color: black;
-  margin-bottom: 10px;
-}
-
-h3{
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.education-box h3:last-child{
-  font-weight: bold;
-  color: brown;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-h3{
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-*/
-
-
-
-
-
-
-
 
 
 
