@@ -198,7 +198,7 @@ small {
   margin-top: 7dvh;
   padding-top: 1dvh;
   padding-bottom: 1dvh;
-  background-color: rgba(191, 80, 152, 0.5);
+  background-color: rgba(191, 80, 152, 0.2);
   padding-left: 1vw;
   padding-right: 1vw;
 }
@@ -227,15 +227,14 @@ small {
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  max-width: 35vw;
-  height: auto;
+  height: 35vh;
   border-radius: 5px;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
 
 .card img {
-  max-width: 10vw; /* or whatever size looks good */
+  max-width: 7vw; /* or whatever size looks good */
   height: auto;
   margin-bottom: 1rem;
 }
@@ -281,6 +280,10 @@ main.experience-main > * {
   z-index: 1;
 }
 
+.experience-main h2{
+  color: rgba(89, 2, 59, 1.0);
+}
+
 #experience-table {
   padding-top: 10dvh;
   margin-bottom: 18dvh;
@@ -295,11 +298,11 @@ main.experience-main > * {
   color: black;
 }
 
-#experience-table thead th {
+#experience-table th {
   background: #111;
 }
 
-#experience-table thead th h4 {
+#experience-table th h4 {
   color: #fff;
 }
 
@@ -316,7 +319,7 @@ main.experience-main > * {
 }
 
 .projects-header h2 {
-  color: #59023b;
+  color: rgba(89, 2, 59, 1.0);
 }
 
 .projects-main {
@@ -329,15 +332,28 @@ main.experience-main > * {
 /*projects ends */
 
 /* contact begins */
-.contact-header {
-  margin-top: 7dvh;
-  padding: 2vh 2vw; /* MF_ Optional: control spacing inside header/main for a clean look */
-  background-color: rgba(113, 212,217, 0.7);
-  height: 15dvh;
+
+.contact-main {
+  background-color: rgba(113, 212,217, 0.4);
 }
-.contact-list {
-  margin-top: 8dvh;
+
+.contact-div {
+  background-color: rgba(113, 212,217, 0.4);
+  margin: 12vh 3vh 3vh 3vh;
 }
+
+.contact-div h2{
+  color: rgba(89, 2, 59, 1.0);
+}
+
+
+
+@media (min-width: 768px) {
+    .contact-card {
+        height: 180px;
+    }
+}
+
 
 /* contatc ends */
 

@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact</title>
-     <!-- reference boostrap.css -->
+    <link rel="icon" type="image/x-icon" href="assets/img/Cherryblossom.JPG">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
  
   <body class="d-flex flex-column min-vh-100">
@@ -41,26 +42,49 @@
     </nav>
 <!--navbar ends -->
       
-    <header class="contact-header">
-        <h2>Contact</h2>
-    </header>
+<main class="contact-main flex-fill d-flex align-items-center justify-content-center">
 
-    <main class="contact-list flex-fill">
-        <!-- descriptive list -->
-        <dl>
-            <dt><h3>Email</h3></dt>
-            <dd><h5>mfrancedavid@gmail.com</h5></dd>
+<div class="contact-div container py-5">
+    <h2 class="text-center mb-4">Contact Information</h2>
+    <div class="row g-4">
+        <!-- Email Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center p-3 contact-card">
+                <i class="bi bi-envelope-fill"></i>
+                <h5 class="card-title">Email</h5>
+                <p class="card-text">mfrancedavid@gmail.com</a></p>
+            </div>
+        </div>
 
-            <dt><h3>Phone</h3></dt>
-            <dd><h5>(514) 267-7166</h5></dd>
+        <!-- Phone Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center p-3 contact-card">
+                <i class="bi bi-telephone-fill"></i>
+                <h5 class="card-title">Phone</h5>
+                <p class="card-text">tel:+1(514) 267-7166</a></p>
+            </div>
+        </div>
 
-            <dt><h3>LinkedIn</h3></dt>
-            <dd><h5>---</h5></dd>
+        <!-- LinkedIn Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center p-3 contact-card">
+                <i class="bi bi-linkedin"></i>
+                <h5 class="card-title">LinkedIn</h5>
+                <p class="card-text">link</p>
+            </div>
+        </div>
 
-            <dt><h3>Location</h3></dt>
-            <dd><h5>Montreal, Quebec, Canada</h5></dd>
-        </dl>
-    </main>
+        <!-- Location Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center p-3 contact-card">
+                <i class="bi bi-geo-alt-fill"></i>
+                <h5 class="card-title">Location</h5>
+                <p class="card-text">Montreal, Quebec, Canada</p>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
 
     <footer class="footer d-flex align-items-center justify-content-end py-2">
         <h5>Click here</h5>

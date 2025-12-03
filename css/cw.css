@@ -47,9 +47,11 @@ a:visited{
 }
 /* This is a comment */
 
-@media (max-width: 576px) {
- body {
- background-color: rgb(24, 167, 215);}
+
+@media (min-width: 768px) {
+    .contact-card {
+        height: 180px;
+    }
 }
 
 
