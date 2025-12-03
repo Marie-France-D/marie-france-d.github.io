@@ -68,7 +68,7 @@ html, body {
 #footer-contact {
     color: white;
     text-decoration: solid;
-    background-color: rgba(73,174,62,1);
+    background-color: rgba(73,174,62,0.5);
     padding: 1vh 1vw;
     margin-top: auto;
     display: flex;
