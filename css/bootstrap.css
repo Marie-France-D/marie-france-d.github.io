@@ -67,6 +67,7 @@ html, body {
 
 #footer-contact {
     color: white;
+    font-weight: bold;
     text-decoration: solid;
     background-color: rgb(76, 175, 80);
     padding: 1vh 1vw;
