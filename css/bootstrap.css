@@ -20,7 +20,7 @@ html, body {
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 1em; 
   background-color: rgba(2, 85, 89, 1);
-  border-bottom: 0.5vh solid rgba(73,174,62,0.6)
+  border-bottom: 0.5vh solid rgb(76, 175, 80);
 }
 
 .navbar-brand{
@@ -58,7 +58,7 @@ html, body {
   height: 9vh; /* MF- fixed footer height */  
   height: 9dvh;
   padding: 0 2vw;  /* MF- horizontal padding only if height is fixed */
-  border-top: 0.5vh solid rgba(73,174,62,0.6)
+  border-top: 0.5vh solid rgb(76, 175, 80);
 }
 
 .footer h5 {
@@ -68,7 +68,7 @@ html, body {
 #footer-contact {
     color: white;
     text-decoration: solid;
-    background-color: rgba(73,174,62,0.5);
+    background-color: rgb(76, 175, 80);
     padding: 1vh 1vw;
     margin-top: auto;
     display: flex;
