@@ -18,8 +18,8 @@ html, body {
   top: 0;
   z-index: 99;
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
-  font-size: large; 
-  background-color: #025559;
+  font-size: 1em; 
+  background-color: rgba(2, 85, 89, 1);
   border-bottom: 0.5vh solid rgba(73,174,62,0.6)
 }
 
@@ -40,12 +40,12 @@ html, body {
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: #ffd1ef; 
+  color: rgba(255, 209, 239, 1.0); 
 }
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand.active {
-  color: #ffd1ef;
+  color: rgba(255, 209, 239, 1.0);
 }
 
 /* navbar ends */
@@ -53,7 +53,7 @@ html, body {
 
 /* footer begins*/
 .footer {
-  background-color: #025559;
+  background-color: rgba(2, 85, 89, 1);
   color: white;
   height: 9vh; /* MF- fixed footer height */  
   height: 9dvh;
@@ -79,7 +79,8 @@ html, body {
 
 #footer-contact:hover,
 #footer-contact.active {
-  color: #ffd1ef; }
+  color: rgba(255, 209, 239, 1.0); 
+}
 /* footer ends*/
 
 /* font defintion h1 to small */
@@ -170,7 +171,7 @@ small {
 }
 
 .home {
-  background-color: rgb(122, 197, 203);
+  background-color: rgba(113, 212, 217, 0.4);
   padding: 8vh 2vw;
 }
 
@@ -183,7 +184,7 @@ small {
   padding: 4dvh 1vw 4dvh 1vw;
   background: /* MF_ base neutral backdrop */
     linear-gradient(rgba(191, 80, 152, 0.25), rgba(191, 80, 152, 0.25)),
-    #ffffff; /* white base stops blending with parent color */
+    white; /* white base stops blending with parent color */
 
 }
 
@@ -265,7 +266,7 @@ main.experience-main::before {
   position: absolute;
   inset: 0;             
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),  /* overlay: adjust alpha */
+    linear-gradient(rgba(113, 212, 217, 0.2), rgba(113, 212, 217, 0.2)),  /* overlay: adjust alpha */
     url("../assets/img/Cherryblossom.JPG");
   background-size: cover;         /* crop as needed to fill the banner */
   background-position: top;/* pick which part of the image shows */
@@ -299,11 +300,11 @@ main.experience-main > * {
 }
 
 #experience-table th {
-  background: #111;
+  background-color: rgba(2, 85, 89, 1);
 }
 
 #experience-table th h4 {
-  color: #fff;
+  color:white;
 }
 
 /* experience ends */
@@ -314,7 +315,7 @@ main.experience-main > * {
 .projects-header {
   margin-top: 7dvh;
   padding: 2vh 2vw; /* MF_ Optional: control spacing inside header/main for a clean look */
-  background-color: rgba(113, 212,217, 0.7);
+  background-color: rgba(113, 212, 217, 0.7);
   height: 15dvh;
 }
 
@@ -325,8 +326,8 @@ main.experience-main > * {
 .projects-main {
   padding: 2vh 2vw; /* MF_ Optional: control spacing inside header/main for a clean look */
   background:
-    linear-gradient(rgba(113, 212,217, 0.3), rgba(113, 212,217, 0.3)),
-    #ffffff; /* MF_ white base stops blending with parent color */
+    linear-gradient(rgba(113, 212, 217, 0.3), rgba(113, 212,217, 0.3)),
+    white; /* MF_ white base stops blending with parent color */
 }
 
 /*projects ends */
@@ -334,11 +335,11 @@ main.experience-main > * {
 /* contact begins */
 
 .contact-main {
-  background-color: rgba(113, 212,217, 0.4);
+  background-color: rgba(113, 212, 217, 0.4);
 }
 
 .contact-div {
-  background-color: rgba(113, 212,217, 0.4);
+  background-color: rgba(113, 212, 217, 0.4);
   margin: 12vh 3vh 3vh 3vh;
 }
 
@@ -346,14 +347,11 @@ main.experience-main > * {
   color: rgba(89, 2, 59, 1.0);
 }
 
-
-
 @media (min-width: 768px) {
     .contact-card {
         height: 180px;
     }
 }
-
 
 /* contatc ends */
 
