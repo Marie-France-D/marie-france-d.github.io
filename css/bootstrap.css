@@ -1,7 +1,7 @@
-html, body {
+html, body{
   height: 100%;
   margin: 0;
-  overflow: hidden; /* MF - no scrolling */
+  overflow: hidden;
 }
 
 /* navbar */
@@ -28,44 +28,45 @@ html, body {
   font-size: 1.44em;
   color: white;
   line-height: 7dvh;
+  line-height: 7vh;
 }
 
 .nav-link{
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 1.2em;
   color: white;
-  padding: 0 15px;
+  padding: 0 2vw;
   line-height: 7dvh;
+  line-height: 7vh;
 }
 
 .navbar .nav-link:hover,
-.navbar .nav-link.active {
+.navbar .nav-link.active{
   color: rgba(255, 209, 239, 1.0); 
 }
 
 .navbar .navbar-brand:hover,
-.navbar .navbar-brand.active {
+.navbar .navbar-brand.active{
   color: rgba(255, 209, 239, 1.0);
 }
-
 /* navbar ends */
 
 
 /* footer begins*/
-.footer {
+.footer{
   background-color: rgba(2, 85, 89, 1);
-  color: white;
-  height: 9vh; /* MF- fixed footer height */  
+  color: white; 
   height: 9dvh;
-  padding: 0 2vw;  /* MF- horizontal padding only if height is fixed */
+  height: 9vh;
+  padding: 0 2vw;
   border-top: 0.5vh solid rgb(76, 175, 80);
 }
 
-.footer h5 {
+.footer h5{
   color: white;
 }
 
-#footer-contact {
+#footer-contact{
     color: rgba(89, 2, 59, 1.0);
     font-weight: bold;
     text-decoration: solid;
@@ -79,17 +80,17 @@ html, body {
 }
 
 #footer-contact:hover,
-#footer-contact.active {
+#footer-contact.active{
   color: rgba(255, 209, 239, 1.0); 
 }
 /* footer ends*/
 
-/* font defintion h1 to small */
-html {
+/* font definition h1 to small */
+html{
   font-size: 18px;
-}
+} /* Specifies <p> for subsequent measures (h1 to small) + insures that <small> is 15px, close to 16px */
 
-h1 {
+h1{
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 2.986rem;
   font-weight: 400;
@@ -97,7 +98,7 @@ h1 {
   margin: 0.4em 0;
 }
 
-h2 {
+h2{
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
   font-size: 2.488rem;
   font-weight: 400;
@@ -105,7 +106,7 @@ h2 {
   margin: 0.4em 0;
 }
 
-h3 {
+h3{
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 2.074rem;
   font-weight: 400;
@@ -113,7 +114,7 @@ h3 {
   margin: 0.4em 0;
 }
 
-h4 {
+h4{
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 1.728rem;
   font-weight: 400;
@@ -121,7 +122,7 @@ h4 {
   margin: 0.4em 0;
 }
 
-h5 {
+h5{
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 1.44rem;
   font-weight: 400;
@@ -129,7 +130,7 @@ h5 {
   margin: 0.4em 0;
 }
 
-h6 {
+h6{
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
@@ -137,7 +138,7 @@ h6 {
   margin: 0.4em 0;
 }
 
-p {
+p{
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -145,7 +146,7 @@ p {
   margin: 0.4em 0;
 }
 
-small {
+small{
   font-family: 'Lato', 'Calibri',sans-serif;
   font-size: 0.833rem;
   font-weight: 400;
@@ -154,15 +155,17 @@ small {
 }
 /* font defintion h1 to small: end */
 
-
 /* home begins */
-.home-header {
+.home-header{
   background-color: rgba(140, 31, 102, 0.9);
   margin-top: 7dvh;
+  margin-top: 7vh;
   padding-top: 3dvh;
+  padding-top: 3vh;
   padding-bottom: 11dvh;
-  height: 12vh;
+  padding-bottom: 11vh;
   height: 12dvh;
+  height: 12vh;
 }
 
 .home-header h2{
@@ -171,82 +174,92 @@ small {
   color: white;
 }
 
-.home {
+.home{
   background-color: rgba(113, 212, 217, 0.4);
   padding: 8vh 2vw;
 }
 
-.intro-boxes {
+.intro-boxes{
+  height: 50dvh;
   height: 50vh;
 }
 
-#box1 {
+#box1{
   width: 37vw;
-  padding: 4dvh 1vw 4dvh 1vw;
+  padding: 4vh 1vw 4vh 1vw;
   background: /* MF_ base neutral backdrop */
     linear-gradient(rgba(191, 80, 152, 0.25), rgba(191, 80, 152, 0.25)),
     white; /* white base stops blending with parent color */
 
 }
 
-#box2 {
+#box2{
   width: 37vw;
 }
 /* home ends */
 
 /* education begins */
 
-.education-header {
+.education-header{
   margin-top: 7dvh;
+  margin-top: 7vh;
   padding-top: 1dvh;
+  padding-top: 7vh;
   padding-bottom: 1dvh;
+  padding-bottom: 1vh;
   background-color: rgba(191, 80, 152, 0.2);
   padding-left: 1vw;
   padding-right: 1vw;
 }
 
-.card-header h2 {
+.card-header h2{
   color: rgba(89, 2, 59, 1.0);
 }
 
-.card-header {
+.card-header{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 40vw;
   height: 20dvh;
+  height: 20vh;
   border-radius: 5px;
+  margin-top: 5dvh;
   margin-top: 5vh;
+  margin-bottom: 5dvh;
   margin-bottom: 5vh;
   margin-right: 3vw;
   margin-left: 3vw;
 }
 
-.education-contents {
+.education-contents{
   background-color: rgba(113, 212,217, 0.3);
 }
 
-.card {
+.card{
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  height: 35dvh;
   height: 35vh;
   border-radius: 5px;
+  margin-top: 5dvh;
   margin-top: 5vh;
+  margin-bottom: 5dvh;
   margin-bottom: 5vh;
 }
 
-.card img {
+.card img{
   max-width: 7vw; /* or whatever size looks good */
   height: auto;
   margin-bottom: 1rem;
 }
 
 
-.card:hover {
+.card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-img {
+img{
   border-radius: 5px 5px 0 0;
 }
 
@@ -255,14 +268,15 @@ img {
 
 /* experience begins */
 
-main.experience-main {
+main.experience-main{
   position: relative;
+  padding-top: 25dvh;
   padding-top: 25vh;
   color: #000;
   overflow: hidden;
 }
 
-main.experience-main::before {
+main.experience-main::before{
   content: "";
   position: absolute;
   inset: 0;             
@@ -270,13 +284,12 @@ main.experience-main::before {
     linear-gradient(rgba(113, 212, 217, 0.2), rgba(113, 212, 217, 0.2)),  /* overlay: adjust alpha */
     url("../assets/img/Cherryblossom.JPG");
   background-size: cover;         /* crop as needed to fill the banner */
-  background-position: top;/* pick which part of the image shows */
+  background-position: top;       /* pick which part of the image shows */
   background-repeat: no-repeat;
   pointer-events: none;           /* the banner won’t block interactions */
   z-index: 0;
 }
 
-/* MF_Make sure the content sits above the banner layer */
 main.experience-main > * {
   position: relative;
   z-index: 1;
@@ -286,60 +299,60 @@ main.experience-main > * {
   color: rgba(89, 2, 59, 1.0);
 }
 
-#experience-table {
+#experience-table{
   padding-top: 10dvh;
+  padding-top: 10vh;
   margin-bottom: 18dvh;
+  margin-bottom: 18vh;
   width: 100%;
   border-collapse: collapse;
   background: transparent;
 }
 
-#experience-table th, #experience-table td {
+#experience-table th, #experience-table td{
   border: 2px solid #000;
   padding: 0.75rem 1rem;
   color: black;
 }
 
-#experience-table th {
+#experience-table th{
   background-color: rgba(2, 85, 89, 1);
 }
 
-#experience-table th h4 {
+#experience-table th h4{
   color:white;
 }
-
 /* experience ends */
 
 
 /* projects begins */
-
-.projects-header {
+.projects-header{
   margin-top: 7dvh;
+  margin-top: 7vh;
   padding: 2vh 2vw; /* MF_ Optional: control spacing inside header/main for a clean look */
   background-color: rgba(113, 212, 217, 0.7);
   height: 15dvh;
+  height: 15vh;
 }
 
-.projects-header h2 {
+.projects-header h2{
   color: rgba(89, 2, 59, 1.0);
 }
 
-.projects-main {
+.projects-main{
   padding: 2vh 2vw; /* MF_ Optional: control spacing inside header/main for a clean look */
   background:
     linear-gradient(rgba(113, 212, 217, 0.3), rgba(113, 212,217, 0.3)),
     white; /* MF_ white base stops blending with parent color */
 }
-
 /*projects ends */
 
 /* contact begins */
-
-.contact-main {
+.contact-main{
   background-color: rgba(113, 212, 217, 0.4);
 }
 
-.contact-div {
+.contact-div{
   background-color: rgba(113, 212, 217, 0.4);
   margin: 12vh 3vh 3vh 3vh;
 }
@@ -353,7 +366,6 @@ main.experience-main > * {
         height: 180px;
     }
 }
-
 /* contatc ends */
 
 
