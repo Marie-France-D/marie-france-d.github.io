@@ -190,7 +190,6 @@ small{
   background: /* MF_ base neutral backdrop */
     linear-gradient(rgba(191, 80, 152, 0.25), rgba(191, 80, 152, 0.25)),
     white; /* white base stops blending with parent color */
-
 }
 
 #box2{
@@ -262,12 +261,10 @@ small{
 img{
   border-radius: 5px 5px 0 0;
 }
-
 /* education ends */
 
 
 /* experience begins */
-
 main.experience-main{
   position: relative;
   padding-top: 25dvh;
